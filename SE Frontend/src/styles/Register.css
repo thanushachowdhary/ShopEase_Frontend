@@ -1,0 +1,80 @@
+.register-page{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Segoe UI',sans-serif;
+background: linear-gradient(
+135deg,
+rgba(0,204,255,0.8),
+rgba(255,200,55,0.8),
+rgba(0,255,170,0.8)
+);
+background-size: 300% 300%;
+animation: gradientMove 8s ease infinite;
+}
+@keyframes gradientMove{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+.register-box{
+background:white;
+padding:40px;
+width:350px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.register-title{
+margin-bottom:25px;
+color:#333;
+}
+
+.register-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.register-input{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+outline:none;
+transition:0.3s;
+}
+
+.register-input:focus{
+border-color:#2575fc;
+}
+
+.register-select{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+.register-btn{
+padding:12px;
+background:#2575fc;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.register-btn:hover{
+background:#333;
+}
